@@ -1,12 +1,11 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;  /* 整体背景为白色 */
+    display: flex;
 }
 
-/* 顶部导航栏样式 */
 .navbar {
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -41,37 +40,80 @@ body {
     color: #007bff;
 }
 
-/* 侧边栏图片样式 */
+/* 侧边栏样式 */
+.sidebar {
+    width: 280px;  /* 设置固定宽度 */
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    height: calc(100% - 60px);
+    box-sizing: border-box;  /* 确保padding不影响宽度 */
+}
+
+/* 调整头像大小 */
 .sidebar img {
-    width: 100%;  /* 确保图片占满侧边栏的宽度 */
-    border-radius: 0;  /* 去掉圆角，改为矩形 */
-    margin-bottom: 20px;
+    width: 200px;  /* 固定头像宽度 */
+    height: auto;  /* 自动调整高度 */
+    display: block;
+    margin: 0 auto 20px;  /* 居中显示头像 */
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;  /* 让名字居中 */
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;  /* 让文本居中 */
+}
+
+.sidebar .contact-info {
+    margin-top: 20px;
+    text-align: center;  /* 联系方式居中 */
+}
+
+.sidebar .contact-info a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;  /* 改成inline-block来调整居中 */
+    margin: 0 10px;  /* 控制间距 */
+    font-size: 16px;
 }
 
 /* 主内容部分样式 */
 .main-content {
-    margin-left: 340px;
+    margin-left: 320px;
     padding: 20px;
-    padding-top: 80px;  /* 确保导航栏不与内容重叠 */
-    background-color: white;  /* 主内容背景为白色 */
+    padding-top: 80px;
+    background-color: white;
+    width: calc(100% - 320px);  /* 主内容宽度与侧边栏宽度匹配 */
 }
 
 /* 移除卡片样式，去除阴影和背景色 */
 .section-content {
-    background-color: white;  /* 使背景保持为白色 */
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 0;  /* 去掉圆角 */
-    box-shadow: none;  /* 去掉阴影 */
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* 页脚样式 */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px;  /* 调整页脚内边距，增加左右一点的空间 */
     background-color: #333;
     color: white;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 80%;  /* 将宽度调整为 80% 使其窄一点 */
+    margin: 20px auto;  /* 使页脚居中显示并增加上下间距 */
+    border-radius: 8px;  /* 增加圆角效果 */
 }
