@@ -3,48 +3,75 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;  /* 整体背景为白色 */
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* 顶部导航栏样式 */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+.navbar ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+.navbar ul li a {
     text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-h1, h2 {
+    font-weight: bold;
     color: #333;
+    font-size: 16px;
 }
 
+.navbar ul li a:hover {
+    color: #007bff;
+}
+
+/* 侧边栏图片样式 */
+.sidebar img {
+    width: 100%;  /* 确保图片占满侧边栏的宽度 */
+    border-radius: 0;  /* 去掉圆角，改为矩形 */
+    margin-bottom: 20px;
+}
+
+/* 主内容部分样式 */
+.main-content {
+    margin-left: 340px;
+    padding: 20px;
+    padding-top: 80px;  /* 确保导航栏不与内容重叠 */
+    background-color: white;  /* 主内容背景为白色 */
+}
+
+/* 移除卡片样式，去除阴影和背景色 */
+.section-content {
+    background-color: white;  /* 使背景保持为白色 */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;  /* 去掉圆角 */
+    box-shadow: none;  /* 去掉阴影 */
+}
+
+/* 页脚样式 */
 footer {
     text-align: center;
+    padding: 20px;
     background-color: #333;
     color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
