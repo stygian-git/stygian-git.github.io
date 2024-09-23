@@ -5,47 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Cheung's Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- 连接外部CSS文件 -->
+    <!-- 引入 FontAwesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* 顶部导航栏样式 */
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .navbar ul li a:hover {
+            color: #007bff;
+        }
+
+        /* 侧边栏样式 */
+        .sidebar {
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 2px 0px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 60px;
+            height: calc(100% - 60px);
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .sidebar .contact-info {
+            margin-top: 20px;
+        }
+
+        .sidebar .contact-info a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .sidebar .contact-info i {
+            margin-right: 10px;
+        }
+
+        /* 主体内容部分样式 */
+        .main-content {
+            margin-left: 320px;
+            padding: 20px;
+            padding-top: 80px; /* 留出顶部导航栏的空间 */
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Welcome to Emily Cheung's Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Emily Cheung, and this is my personal website. Here, I share my projects, thoughts, and experiences.</p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
         <ul>
-            <li><strong>Project 1:</strong> Project 1.</li>
-            <li><strong>Project 2:</strong> Project 2.</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </div>
 
-    <!-- Contact-->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via <a href="emilychoufixx@gmail.com">email</a>.</p>
-    </section>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <img src="src/profile.jpg" alt="Emily Cheung's Picture">
+        <h1>Emily Cheung</h1>
+        <p>M.A. student<br>
+           School of Journalism and Communication<br>
+           Nanjing University<br>
+           emilychoufixx@gmail.com</p>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Zhang Yufei. All Rights Reserved.</p>
-    </footer>
+        <!-- 联系方式 -->
+        <div class="contact-info">
+            <a href="https://www.google.com/maps?q=Nanjing+China" target="_blank">
+                <i class="fas fa-map-marker-alt"></i> Nanjing, China
+            </a>
+            <a href="path_to_cv.pdf" target="_blank">
+                <i class="fas fa-file-alt"></i> CV
+            </a>
+            <a href="mailto:emilychoufixx@gmail.com">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Emily Cheung, and this is my personal website. Here, I share my projects, thoughts, and experiences.</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> Project 1.</li>
+                <li><strong>Project 2:</strong> Project 2.</li>
+            </ul>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Research</h2>
+            <p>Here are some of the research topics I'm involved in.</p>
+        </section>
+
+        <!-- Publications -->
+
+        <!-- Contact-->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:emilychoufixx@gmail.com">email</a>.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Yufei Zhang. All Rights Reserved.</p>
+        </footer>
+    </div>
 
 </body>
-    
+
 </html>
