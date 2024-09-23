@@ -12,6 +12,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
             background-color: #f5f5f5;
         }
 
@@ -98,16 +99,42 @@
 
         /* 主体内容部分样式 */
         .main-content {
-            margin-left: 320px;
+            margin-left: 340px;
             padding: 20px;
-            padding-top: 80px; /* 留出顶部导航栏的空间 */
+            padding-top: 80px;
+        }
+
+        /* 主内容区样式 */
+        .section-content {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .section-content h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .section-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
         }
 
         /* 页脚样式 */
         footer {
             text-align: center;
-            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
+
     </style>
 </head>
 <body>
@@ -147,31 +174,34 @@
 
     <!-- 主体内容 -->
     <div class="main-content">
-        <!-- About -->
-        <section id="about">
+        <!-- About Me Section -->
+        <section id="about" class="section-content">
             <h2>About Me</h2>
-            <p>Hello! I'm Emily Cheung, and this is my personal website. Here, I share my projects, thoughts, and experiences.</p>
+            <p>Hello! I'm Emily Cheung, and this is my personal website. I am currently pursuing a Master of journalism and communication at Nanjing University. My research interests are in computational communication.<br>
+               Grant me the wine to accept the things I cannot change, <br>
+                The coffee to change the things I can,<br> 
+                And the vodka for when I fail to know the difference
+            </p>
         </section>
 
-        <!-- Projects -->
-        <section id="projects">
+        <!-- Projects Section -->
+        <section id="projects" class="section-content">
             <h2>Projects</h2>
+            <p>Here are some of the research projects I'm involved in.</p>
             <ul>
-                <li><strong>Project 1:</strong> Project 1.</li>
-                <li><strong>Project 2:</strong> Project 2.</li>
+                <li><strong>Project</strong>coming soon</li>
             </ul>
         </section>
 
-        <!-- Research -->
-        <section id="research">
+        <!-- Research Section -->
+        <section id="research" class="section-content">
             <h2>Research</h2>
-            <p>Here are some of the research topics I'm involved in.</p>
+            <p>coming soon.</p>
         </section>
+        
 
-        <!-- Publications -->
-
-        <!-- Contact-->
-        <section id="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="section-content">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:emilychoufixx@gmail.com">email</a>.</p>
         </section>
