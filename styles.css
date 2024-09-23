@@ -1,3 +1,5 @@
+/* 样式文件 */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +8,7 @@ body {
     display: flex;
 }
 
+/* 顶部导航栏样式 */
 .navbar {
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -49,42 +52,53 @@ body {
     top: 60px;
     height: calc(100% - 60px);
     box-sizing: border-box;  /* 确保padding不影响宽度 */
+    text-align: center;  /* 所有内容居中 */
 }
 
-/* 调整头像大小 */
+/* 头像样式 */
 .sidebar img {
-    width: 200px;  /* 固定头像宽度 */
+    width: 180px;  /* 确保头像大小适中 */
     height: auto;  /* 自动调整高度 */
     display: block;
-    margin: 0 auto 20px;  /* 居中显示头像 */
+    margin: 0 auto 20px;  /* 居中显示头像并增加下方间距 */
+    border-radius: 0;  /* 矩形头像 */
 }
 
+/* 姓名标题样式 */
 .sidebar h1 {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;  /* 让名字居中 */
     margin-bottom: 10px;
+    text-align: center;
 }
 
+/* 简介部分 */
 .sidebar p {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
     color: #555;
-    text-align: center;  /* 让文本居中 */
+    margin-bottom: 20px;
 }
 
+/* 联系方式图标和文字居中样式 */
 .sidebar .contact-info {
     margin-top: 20px;
-    text-align: center;  /* 联系方式居中 */
+    list-style: none;
+    padding: 0;
 }
 
 .sidebar .contact-info a {
     text-decoration: none;
     color: #333;
-    display: inline-block;  /* 改成inline-block来调整居中 */
-    margin: 0 10px;  /* 控制间距 */
+    display: block;
+    margin-bottom: 15px;  /* 每个联系方式之间增加间距 */
     font-size: 16px;
+    text-align: left;  /* 图标与文字对齐 */
+}
+
+.sidebar .contact-info i {
+    margin-right: 10px;  /* 图标与文字的间距 */
 }
 
 /* 主内容部分样式 */
@@ -105,15 +119,15 @@ body {
     box-shadow: none;
 }
 
-
+/* 页脚样式 */
 footer {
     text-align: center;
-    padding: 10px 20px;  /* 调整页脚内边距，增加左右一点的空间 */
+    padding: 10px 20px;  /* 调整页脚内边距，增加左右空间 */
     background-color: #333;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 80%;  /* 将宽度调整为 80% 使其窄一点 */
-    margin: 20px auto;  /* 使页脚居中显示并增加上下间距 */
-    border-radius: 8px;  /* 增加圆角效果 */
+    position: relative;  /* 设置为相对位置，允许页脚根据内容自然排布 */
+    width: 100%;  /* 页脚占据整个页面的宽度 */
+    margin-top: 20px;  /* 增加页脚与内容之间的间距 */
+    border-radius: 0;  /* 去掉圆角，使页脚和页面边缘对齐 */
 }
+
