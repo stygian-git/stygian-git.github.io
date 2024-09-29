@@ -6,6 +6,8 @@ body {
     padding: 0;
     background-color: white;  /* 整体背景为白色 */
     display: flex;
+    font-size: 18px;  /* 全局字体大小调整为18px */
+    line-height: 1.6;  /* 增加行高，提升可读性 */
 }
 
 /* 顶部导航栏样式 */
@@ -18,7 +20,7 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 15px 0;  /* 增加导航栏的上下边距 */
 }
 
 .navbar ul {
@@ -29,14 +31,14 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 20px;  /* 增加导航栏按钮的间距 */
 }
 
 .navbar ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #333;
-    font-size: 16px;
+    font-size: 20px;  /* 导航栏字体增大 */
 }
 
 .navbar ul li a:hover {
@@ -49,10 +51,11 @@ body {
     background-color: white;
     padding: 20px;
     position: fixed;
-    top: 60px;
-    height: calc(100% - 60px);
+    top: 80px;
+    height: calc(100% - 80px);
     box-sizing: border-box;  /* 确保padding不影响宽度 */
     text-align: center;  /* 所有内容居中 */
+    font-size: 18px;  /* 增大侧边栏字体 */
 }
 
 /* 头像样式 */
@@ -66,7 +69,7 @@ body {
 
 /* 姓名标题样式 */
 .sidebar h1 {
-    font-size: 24px;
+    font-size: 28px;  /* 增大名字的字体 */
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
@@ -75,8 +78,8 @@ body {
 /* 简介部分 */
 .sidebar p {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;  /* 增大字体 */
+    line-height: 1.6;  /* 增加行间距 */
     color: #555;
     margin-bottom: 20px;
 }
@@ -93,7 +96,7 @@ body {
     color: #333;
     display: block;
     margin-bottom: 15px;  /* 每个联系方式之间增加间距 */
-    font-size: 16px;
+    font-size: 18px;  /* 增大联系方式的字体 */
     text-align: left;  /* 图标与文字对齐 */
 }
 
@@ -105,9 +108,10 @@ body {
 .main-content {
     margin-left: 320px;
     padding: 20px;
-    padding-top: 80px;
+    padding-top: 100px;  /* 增加主内容的顶部内边距 */
     background-color: white;
     width: calc(100% - 320px);  /* 主内容宽度与侧边栏宽度匹配 */
+    font-size: 18px;  /* 增大主内容区域的字体 */
 }
 
 /* 移除卡片样式，去除阴影和背景色 */
@@ -128,6 +132,6 @@ footer {
     position: relative;  /* 设置为相对位置，允许页脚根据内容自然排布 */
     width: 100%;  /* 页脚占据整个页面的宽度 */
     margin-top: 20px;  /* 增加页脚与内容之间的间距 */
-    border-radius: 0;  /* 去掉圆角，使页脚和页面边缘对齐 */
+    border-radius: 0;
+    font-size: 16px;  /* 页脚字体大小 */
 }
-
