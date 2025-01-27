@@ -2,5 +2,5 @@ title: My Personal Blog
 description: > # this means to ignore newlines until "baseurl:"
   A simple blog to showcase my work.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://EmilyCheung.github.io" # your GitHub Pages URL
+url: "https://stygian-git.github.io" # your GitHub Pages URL
 theme: minima # 使用 Jekyll 的默认主题 Minima
